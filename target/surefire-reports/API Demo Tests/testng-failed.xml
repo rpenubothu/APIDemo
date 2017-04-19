@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [API Demo Tests]">
+  <parameter name="platform" value="Android"/>
+  <test name="basics(failed)">
+    <classes>
+      <class name="com.appium.sample.apidemo.tests.APIDemoTests">
+        <methods>
+          <include name="testClickAccessibility"/>
+          <include name="testPageTitle"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.appium.sample.apidemo.tests.APIDemoTests -->
+    </classes>
+  </test> <!-- basics(failed) -->
+</suite> <!-- Failed suite [API Demo Tests] -->
