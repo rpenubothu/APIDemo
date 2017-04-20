@@ -11,6 +11,9 @@ package com.appium.sample.apidemo.pages;
 	import org.openqa.selenium.support.PageFactory;
 
 
+	/**
+	 * Created by Rajani on 2017-04-15.
+	 */
 	public class AccessibilityServicePage {
 		
 		private WebDriver driver;

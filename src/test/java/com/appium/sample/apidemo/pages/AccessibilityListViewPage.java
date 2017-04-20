@@ -12,6 +12,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 
+/**
+ * Created by Rajani on 2017-04-15.
+ */
 public class AccessibilityListViewPage {
 	
 	private WebDriver driver;

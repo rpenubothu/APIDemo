@@ -2,6 +2,7 @@
 
 <html>
   <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
     <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
@@ -23,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-API_Demo_Tests">
-              <span class="suite-name border-passed">API Demo Tests</span>
+              <span class="suite-name border-failed">API Demo Tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -53,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-API_Demo_Tests">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-API_Demo_Tests" class="hide-methods failed suite-API_Demo_Tests"> (hide)</a> <!-- hide-methods failed suite-API_Demo_Tests -->
+                      <a href="#" panel-name="suite-API_Demo_Tests" class="show-methods failed suite-API_Demo_Tests"> (show)</a> <!-- show-methods failed suite-API_Demo_Tests -->
+                    </span>
+                    <div class="method-list-content failed suite-API_Demo_Tests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API_Demo_Tests" title="com.appium.sample.apidemo.tests.APIDemoTests" hash-for-method="testClickAccessibility">testClickAccessibility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-API_Demo_Tests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +116,22 @@
                     <div class="method-list-content passed suite-API_Demo_Tests">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-API_Demo_Tests" title="com.appium.sample.apidemo.tests.APIDemoTests" hash-for-method="testClickAccessibility">testClickAccessibility</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-API_Demo_Tests" title="com.appium.sample.apidemo.tests.APIDemoTests" hash-for-method="testAccessibilitySettingsUsingDataProvider(Captions, Off)">testAccessibilitySettingsUsingDataProvider(Captions, Off)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API_Demo_Tests" title="com.appium.sample.apidemo.tests.APIDemoTests" hash-for-method="testAccessibilitySettingsUsingDataProvider(ClockBack, On)">testAccessibilitySettingsUsingDataProvider(ClockBack, On)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API_Demo_Tests" title="com.appium.sample.apidemo.tests.APIDemoTests" hash-for-method="testAccessibilitySettingsUsingDataProvider(Magnification gestures, Off)">testAccessibilitySettingsUsingDataProvider(Magnification gestures, Off)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-API_Demo_Tests" title="com.appium.sample.apidemo.tests.APIDemoTests" hash-for-method="testAccessibilitySettingsValueForTitle">testAccessibilitySettingsValueForTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -121,9 +151,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-API_Demo_Tests" class="panel API_Demo_Tests">
-          <div class="suite-API_Demo_Tests-class-passed">
+          <div class="suite-API_Demo_Tests-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.appium.sample.apidemo.tests.APIDemoTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -132,6 +162,49 @@
                   <a name="testClickAccessibility">
                   </a> <!-- testClickAccessibility -->
                   <span class="method-name">testClickAccessibility</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.appium.sample.apidemo.tests.APIDemoTests.testClickAccessibility(APIDemoTests.java:22)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-API_Demo_Tests-class-failed -->
+          <div class="suite-API_Demo_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.appium.sample.apidemo.tests.APIDemoTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAccessibilitySettingsUsingDataProvider(Captions, Off)">
+                  </a> <!-- testAccessibilitySettingsUsingDataProvider(Captions, Off) -->
+                  <span class="method-name">testAccessibilitySettingsUsingDataProvider</span>
+                  <span class="parameters">(Captions, Off)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAccessibilitySettingsUsingDataProvider(ClockBack, On)">
+                  </a> <!-- testAccessibilitySettingsUsingDataProvider(ClockBack, On) -->
+                  <span class="method-name">testAccessibilitySettingsUsingDataProvider</span>
+                  <span class="parameters">(ClockBack, On)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAccessibilitySettingsUsingDataProvider(Magnification gestures, Off)">
+                  </a> <!-- testAccessibilitySettingsUsingDataProvider(Magnification gestures, Off) -->
+                  <span class="method-name">testAccessibilitySettingsUsingDataProvider</span>
+                  <span class="parameters">(Magnification gestures, Off)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAccessibilitySettingsValueForTitle">
+                  </a> <!-- testAccessibilitySettingsValueForTitle -->
+                  <span class="method-name">testAccessibilitySettingsValueForTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -146,7 +219,7 @@
         </div> <!-- panel API_Demo_Tests -->
         <div panel-name="test-xml-API_Demo_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/Rajani/Development/Eclipse-workspace/APIDemo/src/test/resources/testng.xml</span>
+            <span class="header-content">/Users/Rajani/git/APIDemo/src/test/resources/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -159,6 +232,19 @@
       &lt;class name=&quot;com.appium.sample.apidemo.tests.APIDemoTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- basics --&gt;
+  &lt;test name=&quot;basics(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.appium.sample.apidemo.tests.APIDemoTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;BeforeSuite&quot;/&gt;
+          &lt;include name=&quot;AfterSuite&quot;/&gt;
+          &lt;include name=&quot;testClickAccessibility&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+          &lt;include name=&quot;setUp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.appium.sample.apidemo.tests.APIDemoTests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- basics(failed) --&gt;
 &lt;/suite&gt; &lt;!-- API Demo Tests --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,6 +257,9 @@
             <ul>
               <li>
                 <span class="test-name">basics (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">basics(failed) (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,20 +285,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testClickAccessibility')
+data.setCell(0, 1, 'testAccessibilitySettingsUsingDataProvider')
 data.setCell(0, 2, 'com.appium.sample.apidemo.tests.APIDemoTests')
-data.setCell(0, 3, 6878);
+data.setCell(0, 3, 11933);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testPageTitle')
+data.setCell(1, 1, 'testAccessibilitySettingsValueForTitle')
 data.setCell(1, 2, 'com.appium.sample.apidemo.tests.APIDemoTests')
-data.setCell(1, 3, 141);
+data.setCell(1, 3, 10572);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testAccessibilitySettingsUsingDataProvider')
+data.setCell(2, 2, 'com.appium.sample.apidemo.tests.APIDemoTests')
+data.setCell(2, 3, 10548);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testAccessibilitySettingsUsingDataProvider')
+data.setCell(3, 2, 'com.appium.sample.apidemo.tests.APIDemoTests')
+data.setCell(3, 3, 10054);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testPageTitle')
+data.setCell(4, 2, 'com.appium.sample.apidemo.tests.APIDemoTests')
+data.setCell(4, 3, 130);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testClickAccessibility')
+data.setCell(5, 2, 'com.appium.sample.apidemo.tests.APIDemoTests')
+data.setCell(5, 3, 0);
 window.suiteTableData['API_Demo_Tests']= { tableData: data, tableDiv: 'times-div-API_Demo_Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-API_Demo_Tests">
               </div> <!-- times-div-API_Demo_Tests -->
             </div> <!-- times-div -->
@@ -236,22 +341,50 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.appium.sample.apidemo.tests.APIDemoTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">BeforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">342 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">testAccessibilitySettingsUsingDataProvider(Captions, Off)</span>
+                <span class="method-start">7736 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAccessibilitySettingsUsingDataProvider(ClockBack, On)</span>
+                <span class="method-start">19670 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAccessibilitySettingsUsingDataProvider(Magnification gestures, Off)</span>
+                <span class="method-start">29724 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAccessibilitySettingsValueForTitle</span>
+                <span class="method-start">40272 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testClickAccessibility</span>
-                <span class="method-start">6684 ms</span>
+                <span class="method-start">50845 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testPageTitle</span>
-                <span class="method-start">13563 ms</span>
+                <span class="method-start">50848 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13705 ms</span>
+                <span class="method-start">50978 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AfterSuite</span>
+                <span class="method-start">53723 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

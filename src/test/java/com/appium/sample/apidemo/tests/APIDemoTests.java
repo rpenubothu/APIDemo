@@ -4,18 +4,22 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
 
-
+/**
+ * Created by Rajani on 2017-04-15.
+ */
 public class APIDemoTests extends BaseTest {
 	
 	@Test
 	public void testPageTitle() {
 		System.out.println("Title of the page is: " +apiDemosHome.title.getText() );
 		Assert.assertEquals("API Demos", apiDemosHome.title.getText());
+	
 	}
 	
 	@Test
 	public void testClickAccessibility()
 	{
+		extent.createTest("testClickAccessibility");
 		apiDemosHome.clickListItemAtIndex(0);
 		
 		//AccessibilityCustomViewPage customViewPage = listViewPage.tapItemWithName("Custom View");
@@ -79,6 +83,17 @@ public class APIDemoTests extends BaseTest {
 	 * 
 	 */
 	
+	
+	
+	/*
+	 * When a test fails, capture the screenshot.
+	 * 
+	 */
+	
+	
+	/*
+	 * Best way to add logging for organized reporting on test results.
+	 */
 	
 	
 }

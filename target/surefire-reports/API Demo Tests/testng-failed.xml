@@ -2,12 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [API Demo Tests]">
   <parameter name="platform" value="Android"/>
+  <test name="basics">
+    <classes>
+      <class name="com.appium.sample.apidemo.tests.APIDemoTests"/>
+    </classes>
+  </test> <!-- basics -->
   <test name="basics(failed)">
     <classes>
       <class name="com.appium.sample.apidemo.tests.APIDemoTests">
         <methods>
+          <include name="BeforeSuite"/>
+          <include name="AfterSuite"/>
           <include name="testClickAccessibility"/>
-          <include name="testPageTitle"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.appium.sample.apidemo.tests.APIDemoTests -->

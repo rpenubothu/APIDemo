@@ -18,8 +18,8 @@
 		<dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.9.8</version>
-            <scope>compile</scope>
+            <version>6.9.10</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.appium</groupId>
@@ -38,6 +38,17 @@
 			<version>2.6</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+    		<groupId>com.aventstack</groupId>
+    		<artifactId>extentreports</artifactId>
+    		<version>3.0.5</version>
+		</dependency>
+		<dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.23</version>
+        </dependency>
+
 		<!-- Includes the Sauce JUnit helper libraries -->
 		<dependency>
 			<groupId>com.saucelabs</groupId>
@@ -51,7 +62,6 @@
 			<version>2.2.4</version>
 		</dependency>
 	</dependencies>
-
   <build>
 		<plugins>
 			<plugin>
