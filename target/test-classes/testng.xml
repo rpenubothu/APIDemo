@@ -1,6 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="API Demo Tests">
 <parameter name="platform" value="Android"/>
+	<listeners>
+		<listener class-name="com.appium.sample.apidemo.tests.ExtentTestNGITestListener" />
+	</listeners>
 	<test name="basics">
     	<classes>
       		<class name="com.appium.sample.apidemo.tests.APIDemoTests"/>

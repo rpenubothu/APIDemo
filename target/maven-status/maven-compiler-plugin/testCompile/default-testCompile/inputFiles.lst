@@ -2,9 +2,10 @@
 /Users/Rajani/git/APIDemo/src/test/java/com/appium/sample/apidemo/pages/AccessibilityListViewPage.java
 /Users/Rajani/git/APIDemo/src/test/java/com/appium/sample/apidemo/pages/AccessibilityCustomViewPage.java
 /Users/Rajani/git/APIDemo/src/test/java/com/appium/sample/apidemo/tests/BaseTest.java
+/Users/Rajani/git/APIDemo/src/test/java/com/appium/sample/apidemo/tests/ExtentTestNGITestListener.java
 /Users/Rajani/git/APIDemo/src/test/java/com/appium/sample/apidemo/controller/TestBase.java
 /Users/Rajani/git/APIDemo/src/test/java/com/appium/sample/apidemo/pages/AccessibilityServicePage.java
 /Users/Rajani/git/APIDemo/src/test/java/com/appium/sample/apidemo/controller/AppController.java
+/Users/Rajani/git/APIDemo/src/test/java/com/appium/sample/apidemo/controller/ExtentReportingManager.java
 /Users/Rajani/git/APIDemo/src/test/java/com/appium/sample/apidemo/pages/APIDemosListPage.java
-/Users/Rajani/git/APIDemo/src/test/java/com/appium/sample/apidemo/controller/ExtentReportingController.java
 /Users/Rajani/git/APIDemo/src/test/java/com/appium/sample/apidemo/tests/APIDemoTests.java

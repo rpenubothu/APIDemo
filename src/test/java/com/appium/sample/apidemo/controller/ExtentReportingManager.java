@@ -6,20 +6,20 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 
-public class ExtentReportingController {
+public class ExtentReportingManager {
 
 public static ExtentReports extent;
-public static ExtentReportingController instance = new ExtentReportingController();
+public static ExtentReportingManager instance = new ExtentReportingManager();
 
 public static ExtentReports getInstance() {
 	if (extent == null)
-		createInstance();
+		createInstance("test-output/extent.html");
 	
     return extent;
 }
 
-public static ExtentReports createInstance() {
-	String fileName = "test-output/extent.html";
+public static ExtentReports createInstance(String fileName) {
+	
     ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
     htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
     htmlReporter.config().setChartVisibilityOnOpen(true);

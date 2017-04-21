@@ -1,6 +1,7 @@
 package com.appium.sample.apidemo.tests;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
 
@@ -12,6 +13,7 @@ public class APIDemoTests extends BaseTest {
 	@Test
 	public void testPageTitle() {
 		System.out.println("Title of the page is: " +apiDemosHome.title.getText() );
+		Reporter.log("Title of the page is: " +apiDemosHome.title.getText() );
 		Assert.assertEquals("API Demos", apiDemosHome.title.getText());
 	
 	}
@@ -19,15 +21,17 @@ public class APIDemoTests extends BaseTest {
 	@Test
 	public void testClickAccessibility()
 	{
-		extent.createTest("testClickAccessibility");
-		apiDemosHome.clickListItemAtIndex(0);
-		
+		Reporter.log("Tapping on first item in the list");
+		apiDemosHome.clickListItemAtIndex(0);	
+		Reporter.log("Tapping Custom View");
 		//AccessibilityCustomViewPage customViewPage = listViewPage.tapItemWithName("Custom View");
 		listviewPage.getItemWithName("Custom View")
 					.click();
 		// go back to listview page
+		Reporter.log("Tapping on back from custom view page to return back");
 		customviewPage.back();
 		// go back to demo homepage
+		Reporter.log("Tapping on back from listview page to return back to main listing page");
 		listviewPage.back();
 	}
 	
