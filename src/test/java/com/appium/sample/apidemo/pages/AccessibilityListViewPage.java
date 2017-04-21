@@ -47,20 +47,13 @@ public class AccessibilityListViewPage {
 	{
 		System.out.println("Trying to look up for item to click is :" + itemText);
 		for(int i =0; i< accessibilityListItems.size(); i++){
-			System.out.println("Current item in the loop is: "+ accessibilityListItems.get(i).getText() + " at index: "+i);
 			if(accessibilityListItems.get(i).getText().equals(itemText))
 			{
-				System.out.println("string comparison is working if i value is 2. Current i value is: " + i);
 				return accessibilityListItems.get(i);
 			}
-		}
-		
-		System.out.println("Item: " + itemText + " we are trying to click is not found and clicking on right item anyway");
-		return accessibilityListItems.get(2);
+		}return null;
 	}
-	
-	
-	
+		
 	//method / Action to click on device's back button
 	public void back()
 	{

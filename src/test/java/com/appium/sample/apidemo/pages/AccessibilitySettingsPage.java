@@ -46,7 +46,6 @@ public class AccessibilitySettingsPage {
 		// get current setting for a particular item using its setting title
 		public String getCurrentSettingFor(String settingTitle)
 		{
-			System.out.println("Setting Title queried :"+settingTitle);
 			// loop through the list of all settings webelements to find the element whose text matches to the setting title
 			// and return the elements summary value.
 			for (WebElement elem : allSettings) {
